@@ -83,8 +83,16 @@ public class Stack {
 			}
 	}
 	
+	/**
+	 * @return size of stack 
+	 */
+	public int stackSize()
+	{
+		return top+1;
+	}
 	
-	/*public static void main(String[] args)
+	
+	/* public static void main(String[] args)
 	{
 		Stack testStack = new Stack(15);
 		System.out.println(testStack.isEmpty());
@@ -93,6 +101,7 @@ public class Stack {
 		testStack.push(80);
 		testStack.pop();
 		testStack.displayStack();
+		System.out.println("Size->"+testStack.stackSize());
 		
 	}*/
 	
