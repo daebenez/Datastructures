@@ -48,7 +48,8 @@ public class BubbleSort {
 	 * @param args
 	 * Test function
 	 */
-	public static void main(String[] args)
+	
+	/*public static void main(String[] args)
 	{
 		int[] testArray = {3,1,6,-2,5,9,-8};
 		int[] result = new int[8];
@@ -58,6 +59,6 @@ public class BubbleSort {
 			System.out.println(result[k]);
 		}
 		
-	}
+	}*/
 
 }
