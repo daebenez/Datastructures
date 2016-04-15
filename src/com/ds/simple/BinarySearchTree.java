@@ -3,7 +3,7 @@ import com.ds.simple.BinaryNode;
 /**
  * @author daebenez
  * Implementation of binary search tree using Java (Recursive version)
- *
+ * Time Complexity : Insertion, deletion, search : Big Oh log n
  */
 
 public class BinarySearchTree {
