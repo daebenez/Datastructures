@@ -1,12 +1,14 @@
 /**
  * @author daebenez
  * Multiplication using bit manipulation.
+ * Multiply second integer by 2 power n where n is the number of set bits in the first integer.
  */
 
 class Multiplication{
 
 	/**
-	 * use a bit mask to find if a binary digit at a position is 1, then left shift position 		 * times. Add 1 to the product if first digit is 1.
+	 * use a bit mask to check if the bit at a position for int b is set to 1, if so left shift int a once. Repeat for all set bits 
+         * in int a.Finally Add a to the product if first bit of b is 1.
 	 * @return : product of 2 numbers.
 	 */
 	public static int multiplyNumbers(int a,int b)
