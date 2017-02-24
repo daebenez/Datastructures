@@ -1,6 +1,6 @@
 /**
  * @author daebenez
- * Brian Kernighan Algorithm to find count of set digits for a binary representation of an integer.
+ * Brian Kernighan Algorithm to find count of set digits in a binary representation of an integer.
  */
 
 package com.ds.simple;

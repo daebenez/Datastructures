@@ -2,6 +2,7 @@
  * @author daebenez
  * Multiplication using bit manipulation.
  * Multiply second integer by 2 power n where n is the number of set bits in the first integer.
+ * Time complexity -> O(log n) | because an integer n has log n bits.
  */
 
 class Multiplication{
@@ -17,7 +18,7 @@ class Multiplication{
 		int product = 0;
 		for(int i=1;i<32;i++)
 		{
-		  ans = ((b & (1<<i))!=0) ? (a << i) : 0;
+		  ans = ((b & (1<<i))!=0) ? (a << i) : 0; // Dividing int b by 2 like so b>>1 and (b & 1)!=0 is another way of finding set bit.
 		  product = product + ans;
 		}
 		ans = ((b & 1)==1) ? a:0;
