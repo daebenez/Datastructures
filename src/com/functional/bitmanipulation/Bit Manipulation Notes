@@ -1,0 +1,8 @@
+Bit Manipulation
+================
+
+1. Each integer N is represented by log n number of bits. Conversely n bits can represent (2
+power n) integers. Hence iterating through all bits representing an integer will take O(log n) 
+time.
+
+
