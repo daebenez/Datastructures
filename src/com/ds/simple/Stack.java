@@ -3,6 +3,8 @@ package com.ds.simple;
 /**
  * @author daebenez
  * Stack Implementation in Java using arrays
+ * Space complexity : O(n) where n is the number of input elements/stack size
+ * Time Complexity : Searching  for an element/find element O(n), Insertion O(1) and deletion O(1)
  */
 
 public class Stack {
@@ -24,7 +26,7 @@ public class Stack {
 	
 	
 	/**
-	 * Method to check if stack is empty
+	 * Method to check if stack is empty. 
 	 * @param stackArray
 	 * @return boolean
 	 */
@@ -39,13 +41,13 @@ public class Stack {
 	
 	
 	/**
-	 * Insert an element into stack
+	 * Insert an element into stack.
 	 * @param stackArray
 	 * @param elem
 	 */
 	public void push(int elem)
 	{
-		//check for overflow, then insert
+		//check for overflow(top is not equal to array size), then insert
 		if(top == stackSize-1)
 			System.out.println("Stack overflow, cannot insert element");
 		else
@@ -62,6 +64,7 @@ public class Stack {
 	 */
 	public void pop()
 	{
+		// Check if stack is empty before removing an element.
 		if(isEmpty())
 			System.out.println("Stack Underflow, No element to delete !");
 		else
@@ -70,7 +73,7 @@ public class Stack {
 	}
 	
 	/**
-	 * Display contents of the stack
+	 * Display contents of the stack.
 	 */
 	public void displayStack()
 	{
@@ -84,7 +87,7 @@ public class Stack {
 	}
 	
 	/**
-	 * @return size of stack 
+	 * @return size of stack.  
 	 */
 	public int stackSize()
 	{
