@@ -1,12 +1,11 @@
 package com.ds.simple;
 import com.ds.simple.LinkedListNode;
 
-/**
- * 
+/** 
  * @author daebenez
- * Implementation of Doubly Linked List in Java
- * Time Complexity : Insertion & Deletion : Big Oh 1. Search : Big Oh n 
- *
+ * Implementation of Doubly Linked List in Java.
+ * Time Complexity : Insertion & Deletion : O(1), Search/find : O(n).
+ * Space Complexity : O(n).
  */
 
 public class DoublyLinkedList {
@@ -29,7 +28,7 @@ public class DoublyLinkedList {
 	public void insertAtStart(int elem)
 	{
 		LinkedListNode node = new LinkedListNode(elem);
-		//If there is no elements in the list
+		//If there is no elements in the list, insert at head.
 		if(head == null)
 		{
 			head = node;
@@ -37,12 +36,14 @@ public class DoublyLinkedList {
 		}
 		else
 		{
-			//set head's prev to node, node's next to head. set node as head
+			/* set head's prev pointer to node, node's next pointer to head, 
+			 * then set node as head 
+			 */
 			head.setPrev(node);
 			node.setNext(head);
 			head = node;
 		}
-		//increment size
+		//increment size.
 		size++;
 	}
 	
@@ -53,6 +54,7 @@ public class DoublyLinkedList {
 	public void insertAtEnd(int elem)
 	{
 		LinkedListNode node = new LinkedListNode(elem);
+		// If list is empty insert at head.
 		if(head == null)
 		{
 			head = node;
@@ -60,6 +62,9 @@ public class DoublyLinkedList {
 		}
 		else
 		{
+		/* Set tail's next pointer to node and node's prev to tail, 
+		 * then set new node as tail.
+		 */
 			node.setPrev(tail);
 			tail.setNext(node);
 			tail = node;
@@ -75,8 +80,10 @@ public class DoublyLinkedList {
 	 */
 	public void insertAtPos(int elem, int pos)
 	{
+		// Decrement position since we count from 0.
 		pos--;
 		LinkedListNode node = new LinkedListNode(elem);
+		// If list is empty insert at head.
 		if(head == null)
 		{
 			System.out.println("List is empty, inserting at the first position");
@@ -88,6 +95,7 @@ public class DoublyLinkedList {
 			LinkedListNode currentNode = new LinkedListNode();
 			LinkedListNode temp = new LinkedListNode();
 			currentNode = head;
+			// Loop through the list and find position. Insert into position.
 			for(int i=0;i<size;i++)
 			{
 				if(i == pos)
@@ -114,6 +122,7 @@ public class DoublyLinkedList {
 		LinkedListNode currentNode = new LinkedListNode();
 		currentNode = head;
 		LinkedListNode temp = new LinkedListNode();
+		// If the position is the first element.
 		if(pos == 1)
 		{
 			head = head.next;
@@ -121,11 +130,13 @@ public class DoublyLinkedList {
 		}
 		else if(pos==size)
 		{
+		// If position is the last element.
 			tail = tail.prev;
 			tail.next = null;
 		}
 		else
 		{
+			// Loop through to find the node at position and delete it.
 			for(int i=1;i<size;i++)
 			{
 				if(pos == i)
