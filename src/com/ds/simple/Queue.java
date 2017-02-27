@@ -40,6 +40,7 @@ public class Queue {
 	 */
 	public void enqueue(int elem)
 	{
+		// check if tail is equal to array size before insertion, which means queue is full
 		if(tail == (queueSize-1))
 			System.out.println("Queue is full. Cannot insert element !");
 		else
@@ -53,6 +54,7 @@ public class Queue {
 	 */
 	public void dequeue()
 	{
+		// Check if head is equal to tail before deletion, which means queue is empty
 		if(isEmpty())
 			System.out.println("Queue is empty, No elements to dequeue !");
 		else
