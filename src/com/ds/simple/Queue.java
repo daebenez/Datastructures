@@ -3,7 +3,8 @@ package com.ds.simple;
 /**
  * @author daebenez
  * Linear Queue Implementation in Java using array
- *
+ * Space Complexity : O(n)
+ * Time Complexity : Search/find : O(n), Enqeue : O(n), Dequeue : O(n) 
  */
 public class Queue {
 	
