@@ -3,7 +3,7 @@ package com.ctci.Arrays&Strings
  * @author daebenez
  * Reverse a string inplace.
  * Time complexity -> O(n) Algorithm iterates through the string n/2 times which is still n.
- * Space complexity ->  O(1) since we only use an extra swap integer.
+ * Space complexity ->  O(1) since we only use an extra swap variable.
  */
 
 class Reverse {
