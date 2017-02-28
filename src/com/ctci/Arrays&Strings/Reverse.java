@@ -18,13 +18,13 @@ class Reverse {
 	  }
 	  else {
 		int len = input.length();
-	    // iterate through the string swapping first and last character and so on.  
-	    for(int i=0;i<len/2;i++)
-	    {
-	      char temp = input.charAt(i);
-	      input.setCharAt(i, input.charAt((len-1)-i));
-	      input.setCharAt((len-1)-i,temp);
-	    }
+		// iterate through the string swapping first and last character and so on.  
+		for(int i=0;i<len/2;i++)
+		{
+		 char temp = input.charAt(i);
+		 input.setCharAt(i, input.charAt((len-1)-i));
+		 input.setCharAt((len-1)-i,temp);
+		}
 	 }
 	  System.out.println(input);
 	}
