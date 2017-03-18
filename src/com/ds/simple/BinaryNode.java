@@ -1,13 +1,12 @@
 package com.ds.simple;
-
 /**
  * @author daebenez
  * Implementation of a Binary Tree Node using Java
- *
- */
+ * Implements CompareTo interface.
+ */	
 
-public class BinaryNode {
-	
+public class BinaryNode implements Comparable<BinaryNode> {
+
 	private BinaryNode left,right;
 	private int val;
 	
@@ -45,6 +44,13 @@ public class BinaryNode {
 	public void setVal(int val) {
 		this.val = val;
 	}
-	
-	
+	// compare by value and retuen 1 if current object value is lesser, -1 if greater and 0 if they are equal.
+	public int compareTo(BinaryNode two){
+		if(this.val > two.val)
+			return -1;
+		else if(this.val < two.val)
+			return 1;
+		else
+			return 0;
+	}
 }
