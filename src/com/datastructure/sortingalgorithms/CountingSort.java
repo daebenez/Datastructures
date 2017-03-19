@@ -29,6 +29,7 @@ import java.util.*;
 		{
 			index[j] = index[j]+index[j-1];
 		}
+		// Use the value from the sumCount array to position the item in the result array, decrement the sumcount value.
 		for(int k=0;k<input.length;k++)
 		{
 			int tempTwo = input[k];
