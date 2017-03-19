@@ -17,14 +17,15 @@ import java.util.*;
 		 {
 			bucketholder.add(new ArrayList<Integer>());
 		 }
-		 //insert numbers into buckets according to their 
+		 //insert numbers into buckets according to their most significant digit (tens place)
+		 //divide by 10 once to get the tens place, since maximum possible number is 99.
 		 for(int j=0;j<input.length;j++)
 		 {
 			int temp =  input[j]/10;
 			int index = (temp%10);
 			bucketholder.get(index).add(input[j]);
 		 }
-		 
+		 // Sort individual buckets by other sorting methods.
 		 for(int k=0;k<10;k++)
 		 {
 			 Collections.sort(bucketholder.get(k));
