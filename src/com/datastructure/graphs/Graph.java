@@ -98,6 +98,7 @@ class Graph {
 	    }
 	}
 	
+	/*
 	public static void main(String[] args)
 	{
 		Graph g = new Graph();
@@ -117,5 +118,5 @@ class Graph {
 		g.setEdge(five, six);
 		g.breadthFirstSearch(one);
 		printMap(g.graphList);
-	}
+	} */
 }
