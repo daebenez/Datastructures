@@ -7,7 +7,7 @@
  * For example see here : http://stackoverflow.com/questions/12383002/please-explain-the-logic-behind-kernighans-bit-counting-algorithm
  */
 
-package com.ds.simple;
+package com.functional.bitmanipulation;
 class CountSetDigits {
 
 	public int countOnes(int n)

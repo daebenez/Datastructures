@@ -1,3 +1,5 @@
+package com.functional.bitmanipulation;
+
 /**
  * @author daebenez
  * Multiplication using bit manipulation.

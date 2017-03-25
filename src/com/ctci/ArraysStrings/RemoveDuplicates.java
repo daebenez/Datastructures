@@ -1,4 +1,4 @@
-package com.ctci.Arrays&Strings
+package com.ctci.ArraysStrings;
 /**
  * @author daebenez
  * Find and remove duplicate characters from a string.

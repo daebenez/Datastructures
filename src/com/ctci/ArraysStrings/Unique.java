@@ -1,4 +1,4 @@
-package com.ctci.Arrays&Strings
+package com.ctci.ArraysStrings;
 /**
  * @author daebenez
  * Find if every character in the string is unique, without using any other datastructure.
