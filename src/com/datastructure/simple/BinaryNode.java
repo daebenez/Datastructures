@@ -1,4 +1,4 @@
-package com.ds.simple;
+package com.datastructure.simple;
 /**
  * @author daebenez
  * Implementation of a Binary Tree Node using Java

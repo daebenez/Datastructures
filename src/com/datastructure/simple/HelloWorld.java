@@ -1,4 +1,4 @@
-package com.ds.simple;
+package com.datastructure.simple;
 
 public class HelloWorld {
 	

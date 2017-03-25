@@ -1,5 +1,5 @@
-package com.ds.simple;
-import com.ds.simple.LinkedListNode;
+package com.datastructure.simple;
+import com.datastructure.simple.LinkedListNode;
 
 /** 
  * @author daebenez

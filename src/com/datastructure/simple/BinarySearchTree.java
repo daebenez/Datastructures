@@ -1,5 +1,5 @@
-package com.ds.simple;
-import com.ds.simple.BinaryNode;
+package com.datastructure.simple;
+import com.datastructure.simple.BinaryNode;
 /**
  * @author daebenez
  * Implementation of binary search tree using Java (Recursive version)
