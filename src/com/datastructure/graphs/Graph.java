@@ -2,6 +2,7 @@ package com.datastructure.graphs;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -87,6 +88,31 @@ class Graph {
 		}
 	}
 	
+	/**
+	 * Depth first Search algorithm.
+	 * @param mp
+	 */
+	public void DFS(Vertex root)
+	{
+		HashSet<Vertex> discovered = new HashSet<Vertex>();
+		discovered.add(root);
+		recursiveDFS(root,discovered);
+	}
+	
+	public void recursiveDFS(Vertex root, HashSet<Vertex> discovered)
+	{
+		System.out.println(root.getData());
+		ArrayList<Vertex> adjacentVertices = graphList.get(root);
+		for(Vertex v : adjacentVertices)
+		{
+			if(!discovered.contains(v))
+			{
+				discovered.add(v);
+				recursiveDFS(v,discovered);
+			}
+		}
+	}
+	
 	// Given a Hashmap prints out all keys.
 	public static void printMap(HashMap<Vertex,ArrayList<Vertex>> mp) {
 	    Iterator it = mp.entrySet().iterator();
@@ -116,6 +142,7 @@ class Graph {
 		g.setEdge(three, six);
 		g.setEdge(four, five);
 		g.setEdge(five, six);
+		g.DFS(one);
 		g.breadthFirstSearch(one);
 		printMap(g.graphList);
 	} */
