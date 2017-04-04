@@ -11,6 +11,9 @@ import java.util.Queue;
   * @author daebenez
   * Implementation of graph datastructure using adjacency list in Java.
   * Uses a Hashmap where the key is the Vertex and the value holds the adjacency list.
+  * Time complexity :BFS & DFS -> O(V+E) where V is the number of vertices and E is the edges, 
+  * because the algorithm processes each vertex followed by 
+  * all adjacent vertices (outgoing edges) from the adjacency list once.
   */
 
 class Graph {
