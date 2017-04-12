@@ -26,7 +26,7 @@ public class KthElement {
 			pointerOne++;
 			pointerTwo++;
 		}
-		//first element is the kth element.
+		//first pointer points to the kth element.
 		return input.get(pointerOne);
 	}
 	/*
