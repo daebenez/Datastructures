@@ -26,7 +26,7 @@ public class PartitionList {
 			}
 			temp = temp.getNext();
 		}
-		//tail
+		// Need to do this one more time for the tail node.
 		if(temp.getData()<partition)
 		{
 			lesser.insert(temp.getData());
@@ -35,12 +35,12 @@ public class PartitionList {
 		{
 			greater.insert(temp.getData());
 		}
-		
+		// set lesser's tail to the end of the combined list.
 		lesser.getTail().setNext(greater.getHead());
 		lesser.setTail(greater.getTail());
 		return lesser;
 	}
-	
+	/*
 	public static void main(String[] args)
 	{
 		PartitionList obj = new PartitionList();
@@ -54,6 +54,6 @@ public class PartitionList {
 		SinglyLinkedList res = obj.partition(input, 3); 
 		res.printList();
 		
-	}
+	} */
 
 }
