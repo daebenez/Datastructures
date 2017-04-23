@@ -1,6 +1,7 @@
 package com.ctci.LinkedLists;
 /**
  * @author daebenez
+ * CTCI Q2.1
  * Program to remove duplicates from an unsorted linkedlist.
  * Use a Hash Set to track duplicates and remove it.
  * Time Complexity : O(n)

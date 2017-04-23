@@ -1,12 +1,13 @@
 package com.ctci.LinkedLists;
 import com.ctci.LinkedLists.*;
 /**
+ * CTCI Q2.5
+ * @author daebenez
  * Program to add 2 integers using 2 linked lists. The most significant digit is in the head'
  * least significant in the tail.
  * Use recursion to reverse the order. Use an object to return both sum and carry.
  * When inserting into linked list insert into head so that the solution is in the correct order.
  * Draft version needs improvement. (solution is not in list form and is in reverse order)
- * @author daebenez
  */
 
 public class Listaddition {

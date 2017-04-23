@@ -1,12 +1,14 @@
 package com.ctci.LinkedLists;
 /**
+ * Q2.7
+ * @author daebenez
  * Program to find intersection in two singly linked list.
  * If both lists have the same node they intersect.
  * 2 find intersection first move the pointer in the longer list by
  * k nodes where k is the difference between the sizes of 2 lists.
  * Then iterate through looking for similar nodes.
- * @author daebenez
- *
+ * Time Complexity : O(n) -> we iterate through the list multiple times.
+ * Space Complexity : O(1) 
  */
 public class Intersection {
 	

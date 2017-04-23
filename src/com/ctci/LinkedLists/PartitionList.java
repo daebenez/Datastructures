@@ -1,10 +1,11 @@
 package com.ctci.LinkedLists;
 /**
+ * CTCI Q2.4
+ * @author daebenez
  * Program to partition a linkedlist based of a single item.
  * All numbers greater than item are on the left side, while all items lesser are on the right side.
  * Create 2 separate linked list for lesser and greater numbers then iterate through the input list 
  * filling both lists and connect the two linkedlists at the end.
- * @author daebenez
  */
 
 public class PartitionList {

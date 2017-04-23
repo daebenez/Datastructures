@@ -1,13 +1,13 @@
 package com.ctci.LinkedLists;
 
 /**
+ * CTCI Q2.8
  * @author daebenez
  * Program to implement Floyd's cycle detection algorithm.
  * Use slow and fast runners to detect loop.
  * Reset fast runner to head and increment both by one until they meet.
  * Time Complexity : O(n)
  * Space complexity : O(1)
- *
  */
 public class FloydsAlgorithm {
 	public void cycleDetection(SinglyLinkedList input)

@@ -1,5 +1,6 @@
 package com.ctci.LinkedLists;
 /**
+ * CTCI Q2.2
  * @author daebenez
  * Program to find Kth to the last element in a singly linkedlist.
  * Use runners i.e 2 pointers that are k distance apart, increment them

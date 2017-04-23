@@ -1,6 +1,7 @@
 package com.ctci.LinkedLists;
 
 /**
+ * CTCI Q2.6
  * @author daebenez
  * Program to check if a singly linked list is a palindrome.
  * Use curr, prev, next pointer to reverse the second half of the list
