@@ -37,7 +37,7 @@ public class FloydsAlgorithm {
 		}
 		System.out.println(slowRunner.getData()+""+fastRunner.getData());
 	}
-	
+	/*
 	public static void main(String[] args)
 	{
 		SinglyLinkedList input = new SinglyLinkedList();
@@ -50,6 +50,6 @@ public class FloydsAlgorithm {
 		input.getTail().setNext(input.getHead().getNext());
 		FloydsAlgorithm fa = new FloydsAlgorithm();
 		fa.cycleDetection(input);
-	}
+	} */
 
 }
