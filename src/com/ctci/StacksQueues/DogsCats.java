@@ -2,10 +2,12 @@ package com.ctci.StacksQueues;
 import java.util.LinkedList;
 /**
  * CTCI Q3.6
+ * @author daebenez
  * Program to create a datastructure using linkedlists, which can store dog and cat objects
  * Maintain 2 lists, use wrapper object to store each animal and its associated line number
  * time stamp.
- * @author daebenez
+ * Time Complexity : Insert Dog & Cat : O(1). Get Dog, Cat oldest animal -> O(1)
+ * Space Complexity : O(n) -> 2 linkedlists
  */
 
 public class DogsCats {
@@ -50,7 +52,7 @@ public class DogsCats {
 		{
 			return catQueue.removeFirst();
 		}
-		
+		/*
 		public static void main(String[] args)
 		{
 			DogsCats temp = new DogsCats();
@@ -62,5 +64,5 @@ public class DogsCats {
 			System.out.println(temp.getFirstAnimal().getName());
 			System.out.println(temp.getFirstDog().getName());
 			System.out.println(temp.getFirstCat().getName());
-		}
+		} */
 }
