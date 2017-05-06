@@ -1,6 +1,13 @@
-package com.datastructure.graphs.Djikstra;
-
-import java.util.Arrays;
+package com.datastructure.graphs.Dijkstra;
+/**
+ * Program to find shortest path from a start node to end node using Dijkstra's algorithm
+ * Use modified BFS graph traversal algorithm, use a priroity queue instead of a queue.
+ * The priority queue which is based of a min heap always dequeues min edge.
+ * Time complexity : O(E log V) for adjacency list representation and using min heap
+ * If a fibonacci heap is used it will reduce time even further.
+ * Space complexity : O(n) because of all the extra data structures.
+ * @author daebenez
+ */
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
@@ -10,18 +17,24 @@ public class DjikstrasShortestPath {
 	VertexWeightComparator comparator = new VertexWeightComparator();
 	PriorityQueue<VertexWeightWrapper> queue = new PriorityQueue<VertexWeightWrapper>(comparator);
 	HashSet<Integer> visited = new HashSet<Integer>();
+	int[] parent = new int[20];
 	
 	public DjikstrasShortestPath()
 	{
+		// Set distances to all nodes to infinity
 		for(int i=0;i<20;i++)
 		{
 			distances[i] = Integer.MAX_VALUE;
 		}
 	}
+	
 	public void findShortestPath(WeightedGraph graph, Integer start, Integer end)
 	{
 		//Set start node distance to zero.
 		distances[start.intValue()] = 0;
+		//Set parent for first node as itself.
+		//parent.put(start, start);
+		parent[start.intValue()] = start.intValue();
 		//add start node and its distance to queue.
 		queue.add(new VertexWeightWrapper(start,0));
 		//Loop until end node is reached or queue is empty. 
@@ -39,23 +52,37 @@ public class DjikstrasShortestPath {
 					if(!visited.contains(v.getVertex()))
 					{
 						int vertexWeight = distances[queue.peek().getVertex().intValue()] + v.getWeight();
-						//If prior distance of current neighbour is greater than current distance 
-						if((distances[v.getWeight()] > vertexWeight))
+						//If prior distance of current neighbor is greater than current distance 
+						if((distances[v.getVertex().intValue()] > vertexWeight))
 						{
+							//update distance
 							distances[v.getVertex().intValue()] = vertexWeight;
+							//update parent
+							parent[v.getVertex().intValue()] = queue.peek().getVertex().intValue();
 							VertexWeightWrapper vw = new VertexWeightWrapper(v.getVertex(), vertexWeight);
 							queue.add(vw);
 						}
 					}
 					
 				}
-				System.out.println(queue.peek().getVertex());
 				visited.add(queue.peek().getVertex());
 				queue.remove();
 			}
 		}
 	}
 	
+	public void printPath(Integer start,Integer temp)
+	{
+		if( temp == start.intValue())
+		{
+			System.out.print(start.intValue());
+			return;
+		}
+		
+		printPath(start,Integer.valueOf(parent[temp.intValue()]));
+		System.out.print("->"+temp.intValue());
+	}
+	/*
 	public static void main(String[] args)
 	{
 		WeightedGraph obj = new WeightedGraph();
@@ -86,5 +113,7 @@ public class DjikstrasShortestPath {
 		
 		DjikstrasShortestPath ob = new DjikstrasShortestPath();
 		ob.findShortestPath(obj, zero, four);
-	}
+		ob.printPath(zero,four);
+		
+	} */
 }

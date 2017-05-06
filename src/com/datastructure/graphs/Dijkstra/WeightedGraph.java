@@ -1,9 +1,12 @@
-package com.datastructure.graphs.Djikstra;
-
+package com.datastructure.graphs.Dijkstra;
+/**
+ * Program to create a weighted graph using adjacency list representation.
+ * Each vertex in the graph is a Integer.
+ * @author daebenez
+ */
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
-
 
 public class WeightedGraph {
 	
@@ -50,7 +53,7 @@ public class WeightedGraph {
 		        it.remove(); // avoids a ConcurrentModificationException
 		    }
 		}
-	
+	/*
 	public static void main(String[] args)
 	{
 		WeightedGraph obj = new WeightedGraph();
@@ -80,6 +83,6 @@ public class WeightedGraph {
 		obj.setEdge(five, four, 10);
 		
 		obj.printMap();
-	}
+	} */
 
 }
