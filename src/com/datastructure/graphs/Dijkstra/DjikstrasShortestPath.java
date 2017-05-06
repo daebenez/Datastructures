@@ -82,6 +82,7 @@ public class DjikstrasShortestPath {
 		printPath(start,Integer.valueOf(parent[temp.intValue()]));
 		System.out.print("->"+temp.intValue());
 	}
+	//Question from -> http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
 	/*
 	public static void main(String[] args)
 	{
