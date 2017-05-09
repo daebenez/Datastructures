@@ -3,6 +3,7 @@ package com.ctci.TreesGraphs;
  * CTCI Q 4.2
  * Program to create a balanced BST with minimum possible height, from
  * a sorted (ascending order) array.
+ * Time complexity : O(n)
  * @author daebenez
  */
 public class MinBST {
