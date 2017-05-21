@@ -7,6 +7,8 @@ import java.util.Stack;
 
 /**
  * Program to perform topological sorting of a graph with adjacency list representation.
+ * Perform DFS after exploring all children store vertex in the stack.
+ * In this implementation the final order is stored in the stack, which is printed in reverse order.
  * Time Complexity :O(V + E) -> because we scan all vertices and edges exactly once.
  * @author daebenez
  */
@@ -15,6 +17,7 @@ public class TopologicalSort {
 	
 	private HashMap<Character,LinkedList<Character>> neighbours = new HashMap<Character,LinkedList<Character>>();
 	private HashSet<Character> visited = new HashSet<Character>();
+	// final sorted order
 	private Stack<Character> finalOrder = new Stack<Character>();
 	
 	// Seed function to make sure every vertex in the graph is visited.
