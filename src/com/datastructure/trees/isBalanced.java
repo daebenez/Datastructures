@@ -3,6 +3,7 @@ package com.datastructure.trees;
  * Program to check if a Binary Tree is balanced.
  * Time Complexity : O(n)
  * Space Complexity : O(h) where h is the height of the tree.
+ * @author daebenez
  */
 import com.ctci.TreesGraphs.BalancedBinaryTree;
 
