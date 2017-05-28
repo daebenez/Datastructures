@@ -27,7 +27,7 @@ public class PrintPath {
 		path(root.getRight(),node,result);
 		
 	}
-	
+	/*
 	public static void main(String[] args)
 	{
 		PrintPath obj = new PrintPath();
@@ -47,6 +47,6 @@ public class PrintPath {
 		three.setLeft(seven);
 		
 		obj.findPath(one,six);
-	}
+	} */
 
 }
