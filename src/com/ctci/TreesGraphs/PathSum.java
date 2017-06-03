@@ -1,5 +1,6 @@
-package com.datastructure.trees;
+package com.ctci.TreesGraphs;
 /**
+ * Q 4.12
  * Program to calculate number of paths that sum to a given total in a binary tree.
  * The paths go from top to bottom and do not have to start at the root or end at a leaf.
  * @author daebenez
@@ -43,7 +44,7 @@ public class PathSum {
 		recursiveSum(root.getRight(), path, currSum, target);
 	}
 	
-	/*
+	
 	public static void main(String[] args)
 	{
 		BinaryNode one = new BinaryNode(1);
@@ -72,5 +73,5 @@ public class PathSum {
 		
 		PathSum obj = new PathSum();
 		obj.recursiveSum(one, "", 0, 3);
-	} */
+	} 
 }
