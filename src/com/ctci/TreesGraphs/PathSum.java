@@ -44,7 +44,7 @@ public class PathSum {
 		recursiveSum(root.getRight(), path, currSum, target);
 	}
 	
-	/*
+	
 	public static void main(String[] args)
 	{
 		BinaryNode one = new BinaryNode(1);
@@ -73,5 +73,5 @@ public class PathSum {
 		
 		PathSum obj = new PathSum();
 		obj.recursiveSum(one, "", 0, 3);
-	} */
+	} 
 }
