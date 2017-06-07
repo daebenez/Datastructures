@@ -1,5 +1,9 @@
 package com.ctci.TreesGraphs;
-
+/**
+ * Implementation of binary node with an extra attribute size, 
+ * that holds the value of number of children plus the node.
+ * @author daebenez
+ */
 public class TreeNode {
 	
 	private TreeNode left,right;
