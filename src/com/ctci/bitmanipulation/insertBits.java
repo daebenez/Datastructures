@@ -1,4 +1,4 @@
-package com.datastructure.bitmanipulation;
+package com.ctci.bitmanipulation;
 /**
  * Q 5.1
  * Program to insert an integer into another using Bit manipulation technique.

@@ -1,4 +1,4 @@
-package com.datastructure.bitmanipulation;
+package com.ctci.bitmanipulation;
 /**
  * Q 5.2
  * Program to convert decimal fraction to binary. Input is between 1 and 0
