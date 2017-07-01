@@ -3,7 +3,7 @@ package com.functional.DP;
 import java.util.Arrays;
 
 /**
- * Program to calculate fibonacci using Dynamic programming technique.
+ * Program to calculate fibonacci using Dynamic programming technique.(memoization)
  * @author daebenez
  */
 public class Fibonacci {
