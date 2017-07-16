@@ -2,7 +2,7 @@ package com.functional.DP;
 /**
  * Program to find if a subset sums to a given total. 
  * Dynamic bottom up programming
- * @author daebenez
+ * @author daebenez 
  */
 public class SubsetSum {
 	
