@@ -1,0 +1,5 @@
+Singleton 
+https://www.youtube.com/watch?v=NZaXM67fxbs
+
+Factory Method
+https://www.youtube.com/watch?v=ub0DXaeV6hA
