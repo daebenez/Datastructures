@@ -4,6 +4,7 @@ public class SymmetricTree {
 	
 	public static boolean isSymmetric(TreeNode root)
 	{
+		if(root==null) return true;
 		return helper(root.left, root.right);
 	}
 	
