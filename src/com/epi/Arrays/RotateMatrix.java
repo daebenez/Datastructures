@@ -1,7 +1,11 @@
 package com.epi.Arrays;
-
+/**
+ * Rotate matrix in place. 90 degrees clockwise.
+ * https://www.geeksforgeeks.org/inplace-rotate-square-matrix-by-90-degrees/
+ * @author daebenez
+ * Time: O(N*M) Space : O(1)
+ */
 public class RotateMatrix {
-	
 	public static void rotate(int[][] matrix)
 	{
 		int N = matrix.length;
